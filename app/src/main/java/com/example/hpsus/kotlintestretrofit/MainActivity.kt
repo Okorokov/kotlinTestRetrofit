@@ -15,26 +15,25 @@ import java.util.ArrayList
 
 
 class MainActivity : AppCompatActivity() {
-    private var homes: HomeModel? = null
-    private var recyclerView: RecyclerView? = null
-    private var adapter: RecyclerView.Adapter<*>? = null
-    private var layoutManager: RecyclerView.LayoutManager? = null
+    var homes: ArrayList<HModel>? = null
+    var recyclerView: RecyclerView? = null
+    private var adapter: HomeAdapter? = null
+    var layoutManager: RecyclerView.LayoutManager? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 
-
+        homes=ArrayList<HModel>()
         recyclerView = findViewById(R.id.lvHome) as RecyclerView
         layoutManager = LinearLayoutManager(this)
         recyclerView!!.setLayoutManager(layoutManager)
 
-        //adapter = HomeAdapter(this!!.homes!!)
-        //recyclerView!!.adapter=adapter
+
 
         val retrofit = Retrofit.Builder()
-                .baseUrl("https://rawgit.com/Okorokov/kotlinTest/master/src/main/assets/")
+                .baseUrl("https://rawgit.com/Okorokov/kotlinTestRetrofit/master/app/src/main/assets/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         //retrofit.create()
@@ -47,9 +46,12 @@ class MainActivity : AppCompatActivity() {
 
             override fun onResponse(call: Call<HomeModel>?, response: Response<HomeModel>?) {
                 Log.d("XXXX", response!!.code().toString())
-                //Log.d("XXXX", response!!.body().get(0).getHome()!!.get(0).nameHome)
-                /*homes= response.body()
-                recyclerView!!.adapter.notifyDataSetChanged()*/
+                Log.d("XXXX", response!!.body().getHome()!!.get(0).getnameHome())
+                homes= ArrayList(response.body().getHome())
+                Log.d("XXXX", homes!!.size.toString())
+                val adapter = HomeAdapter(homes!!,applicationContext)
+                recyclerView!!.adapter=adapter
+                //recyclerView!!.adapter.notifyDataSetChanged()
             }
 
         })

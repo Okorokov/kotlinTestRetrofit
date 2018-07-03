@@ -14,10 +14,10 @@ class HomeModel {
     private var data: DataModel? = null
     @SerializedName("home")
     @Expose
-    private var home: List<Home>? = null
+    private var home: List<HModel>? = null
     @SerializedName("apartment")
     @Expose
-    private var apartment: List<Apartment>? = null
+    private var apartment: List<AModel>? = null
 
     fun getData(): DataModel? {
         return data
@@ -27,19 +27,19 @@ class HomeModel {
         this.data = data
     }
 
-    fun getHome(): List<Home>? {
+    fun getHome(): List<HModel>? {
         return home
     }
 
-    fun setHome(home: List<Home>) {
+    fun setHome(home: List<HModel>) {
         this.home = home
     }
 
-    fun getApartment(): List<Apartment>? {
+    fun getApartment(): List<AModel>? {
         return apartment
     }
 
-    fun setApartment(apartment: List<Apartment>) {
+    fun setApartment(apartment: List<AModel>) {
         this.apartment = apartment
     }
 }

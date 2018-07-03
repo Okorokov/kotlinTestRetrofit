@@ -8,6 +8,6 @@ import retrofit2.http.GET
 
 
 interface HomeApi {
-    @GET("index.json")
+    @GET("doc.json")
     fun getData(): Call<HomeModel>
 }

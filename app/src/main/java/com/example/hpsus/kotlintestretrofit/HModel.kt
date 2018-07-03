@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName
 
 
 
-class Home {
+class HModel {
     @SerializedName("indiHome")
     @Expose
     private var indiHome: Int? = null
