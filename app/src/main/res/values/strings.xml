@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Дома</string>
+    <string name="btnReadJson">Обновить</string>
+    <string name="titleInfoActivity">Информация по дому </string>
+    <string name="tvindiHomeName">идентификатор дома:</string>
+    <string name="tvnameHomeName">название дома:</string>
+    <string name="tvfloorsName">этажность:</string>
+    <string name="tvdeveloperName">название застройщика:</string>
+    <string name="tvNoText">отсутствует</string>
+    <string name="tvAindiApartmentName">идентификатор квартиры: </string>
+    <string name="tvAindiHomeName">идентификатор дома:</string>
+    <string name="tvAfloorName">этаж: </string>
+    <string name="tvAareaName">площадь, м2: </string>
+</resources>

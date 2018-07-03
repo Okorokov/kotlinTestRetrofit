@@ -1,0 +1,111 @@
+{
+  "data": {
+    "vers": 1
+  },
+  "home": [
+    {
+      "indiHome": 3344,
+      "nameHome": 11,
+      "floors": 24,
+      "developerName": "ЛСР"
+    },
+    {
+      "indiHome": 3348,
+      "nameHome": 15,
+      "floors": 19,
+      "developerName": "ЛСР"
+    },
+    {
+      "indiHome": 3350,
+      "nameHome": 2,
+      "floors": 19,
+      "developerName": "ЛСР"
+    },
+    {
+      "indiHome": 3354,
+      "nameHome": "высокий",
+      "floors": 24,
+      "developerName": "ЛСР"
+    }
+  ],
+  "apartment": [
+    {
+      "indiApartment": 4512,
+      "indiHome": 3354,
+      "floor": 4,
+      "area": 34.5
+    },
+    {
+      "indiApartment": 4514,
+      "indiHome": 3354,
+      "floor": 4,
+      "area": 70.1
+    },
+    {
+      "indiApartment": 4520,
+      "indiHome": 3354,
+      "floor": 10,
+      "area": 34.6
+    },
+    {
+      "indiApartment": 4521,
+      "indiHome": 3354,
+      "floor": 10,
+      "area": 80.5
+    },
+    {
+      "indiApartment": 4554,
+      "indiHome": 3350,
+      "floor": 10,
+      "area": 80.5
+    },
+    {
+      "indiApartment": 4555,
+      "indiHome": 3350,
+      "floor": 11,
+      "area": 44.4
+    },
+    {
+      "indiApartment": 4530,
+      "indiHome": 3350,
+      "floor": 5,
+      "area": 55.5
+    },
+    {
+      "indiApartment": 4514,
+      "indiHome": 3348,
+      "floor": 6,
+      "area": 55.5
+    },
+    {
+      "indiApartment": 4515,
+      "indiHome": 3348,
+      "floor": 6,
+      "area": 80.3
+    },
+    {
+      "indiApartment": 4516,
+      "indiHome": 3348,
+      "floor": 7,
+      "area": 80.3
+    },
+    {
+      "indiApartment": 4533,
+      "indiHome": 3348,
+      "floor": 1,
+      "area": 34.7
+    },
+    {
+      "indiApartment": 4570,
+      "indiHome": 3344,
+      "floor": 1,
+      "area": 50.3
+    },
+    {
+      "indiApartment": 4577,
+      "indiHome": 3344,
+      "floor": 10,
+      "area": 78.1
+    }
+  ]
+}
